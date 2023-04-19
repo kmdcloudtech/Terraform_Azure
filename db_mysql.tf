@@ -38,6 +38,11 @@ resource "azurerm_mysql_server" "example" {
   ssl_minimal_tls_version_enforced  = "TLS1_2"
 }
 
+
+
+
+# for variables only 
+/*
 variable "db_username" {
    type = string
    sensitive = true
@@ -48,3 +53,4 @@ variable "db_password" {
     sensitive = true
 }
 
+*/  
