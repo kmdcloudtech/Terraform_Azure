@@ -18,15 +18,7 @@ provider "azurerm" {
     features {}
     subscription_id = "0d70d1de-5b9f-42a5-af26-74db6cc6ef60"
     }
-resource "azurerm_resource_group" "demoRG" {   # Reference Name
-            name = "demoRG"
-            location = "Central India"
-            tags = {
-              "Team" = "Dev"
-              "Owner" = "Sudheer"
-            }
 
-}
 resource "azurerm_resource_group" "myrg" {
     for_each = {
       eastgroup             = "eastus"
